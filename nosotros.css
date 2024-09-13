@@ -1,5 +1,18 @@
-.img-nosotros{
-    width: 600px;
+.section-baner .accordion{
     position: relative;
-    top: 30px;
+    top: 100px;
+}
+.container-technologies{
+    margin: 72px 0;
+}
+.container-technologies .title,
+.container-progress
+{
+    margin-bottom: 45px;
+}
+.progress{
+    height: 50px;
+}
+.container-progress h3{
+    margin: 19px 0 5px;
 }

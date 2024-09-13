@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./nosotros.css">
@@ -16,54 +18,151 @@
 <body>
 <!-- Sección de navegación ------------------------------------------------------->
 
-  <nav class="nav-var">
-
-    <div class="nav-bar-content-list">
-      <ul class="nav-bar-list">
-        <li class="nav-bar-content-img">
-          <img src="./Pic/Logo-blog-starbucks.png" alt="logo" class="nav-bar-img">
+<nav class="navbar navbar-expand-lg d-flex">
+  <div class="container-fluid">
+    <img src="./Pic/Logo-blog-starbucks.png" class="img-fluid nav-img-person" alt="...">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
-        <li class="nav-bar-content-link">
-          <a href="./index.html">Inicio</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">¿Quienes Somos?</a>
         </li>
-        <li class="nav-bar-content-link">
-          <a href="./nosotros.html">¿Quienes Somos?</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contaco</a>
         </li>
-        <li class="nav-bar-content-link">
-          <a href="./contact.html">Contacto</a>
-        </li>
-        <li class="nav-bar-content-link">
-          <a href="./news.html">Noticias</a>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Noticias</a>
         </li>
       </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
     </div>
-
-    <div class="nav-bar-content-input">
-      <input type="text" placeholder="Buscar" class="nav-bar-input">
-    </div>
-
-  </nav>
-<!-- Sección de pagina de inicio ------------------------------------------------------->
+  </div>
+</nav>
+<!-- Sección de pagina de Nosotros ------------------------------------------------------->
 
   <main>
     
     <section class="section-baner">
-        <div class="content-img">
-            <img src="Pic/nosotros.jpeg" alt="" class="img-nosotros">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img src="Pic/nosotros.jpeg" alt="" class="img-nosotros">
+            </div>
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header ">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      ¿Quiénes Somos?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Walter, Santiago, Natalia y Arturo son estudiantes de desarrollo web Full Stack en Generation, una plataforma que los ha formado para convertirse en desarrolladores altamente capacitados. Juntos han decidido embarcarse en un emocionante proyecto: la creación de su propio blog, inspirado en el diseño moderno y minimalista del blog de Starbucks. Este blog no solo refleja su creatividad y habilidades técnicas, sino también su pasión por la programación y el diseño web, logrando un espacio digital donde se conjugan elegancia visual y funcionalidad intuitiva.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Sobre este blog
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      El blog, desarrollado por estos jóvenes talentosos, destaca por su diseño atractivo y responsive, ofreciendo una experiencia fluida tanto en dispositivos móviles como en pantallas de escritorio. A través de él, Walter, Santiago, Natalia y Arturo comparten su conocimiento y experiencias en el mundo del desarrollo web, mientras exploran nuevas tendencias tecnológicas, buenas prácticas de programación y su proceso de aprendizaje. Este proyecto representa un importante paso en su camino profesional, reflejando su dedicación y capacidad para materializar ideas en productos digitales de calidad.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section-baner-contenido">  
-            <h1>¿Quienes Somos?</h1>
-            <p>Walter, Santiago, Natalia y Arturo son estudiantes de desarrollo web Full Stack en Generation, una plataforma que los ha formado para convertirse en desarrolladores altamente capacitados. Juntos han decidido embarcarse en un emocionante proyecto: la creación de su propio blog, inspirado en el diseño moderno y minimalista del blog de Starbucks. Este blog no solo refleja su creatividad y habilidades técnicas, sino también su pasión por la programación y el diseño web, logrando un espacio digital donde se conjugan elegancia visual y funcionalidad intuitiva.</p>
-
-            <p>El blog, desarrollado por estos jóvenes talentosos, destaca por su diseño atractivo y responsive, ofreciendo una experiencia fluida tanto en dispositivos móviles como en pantallas de escritorio. A través de él, Walter, Santiago, Natalia y Arturo comparten su conocimiento y experiencias en el mundo del desarrollo web, mientras exploran nuevas tendencias tecnológicas, buenas prácticas de programación y su proceso de aprendizaje. Este proyecto representa un importante paso en su camino profesional, reflejando su dedicación y capacidad para materializar ideas en productos digitales de calidad.</p>
-        </div>
-   
 
     </section>
-    <section>  
-        <img src="Pic/web-develpment.jpeg" alt="">
-    </section>
+ 
+    <div class="container container-technologies">
+      <h2 class="text-center title">Las tecnologías que usamos</h2>
+      <article class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+              <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+              <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+              <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
+              <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
+            </svg>
+            
+            
+            <div class="card-body">
+              <p class="card-text">¡Todo comienza por la estructura! En este caso la contruimos con HTML5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+              <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"/>
+              <path fill="#30a9dc" d="M226 472l149-41 35-394H226"/>
+              <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"/>
+              <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"/>
+            </svg>
+            
+            <div class="card-body">
+              <p class="card-text"><strong></strong>¡Luego le agrgamos un poco de estilo!</strong> Aquí llega CSS y un poco de Boostrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630">
+              <rect width="630" height="630" fill="#f7df1e"/>
+              <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
+            </svg>
+            
+            <div class="card-body">
+              <p class="card-text"><strong>¡Y el que nunca puede faltar!</strong> Javascript para darle a nuestro blog un poco de dinamismo.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
 
+
+
+
+
+    <dic class="container container-progress">
+      <h2 class="text-center title">Otras herramientas utilizadas</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Bootstrap</h3>
+          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 25%">25%</div>
+          </div>
+          <h3>NodeJS</h3>
+          <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+          </div>
+          <h3>Express</h3>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+          </div>
+          <h3>TypeScript</h3>
+          <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+          </div>
+        </div>
+      </div>
+    </dic>
   </main>
 
 <!-- Sección de pie de pagina ------------------------------------------------------->
@@ -83,6 +182,7 @@
 
 
   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
 </html>
