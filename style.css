@@ -33,128 +33,56 @@ html {
   width: 100%;    
 }
 /* Sección de navegación ***********************************************/
-.nav-var{
-  display: flex;
-  width: 100%;
-  background-color: white;
-  justify-content:space-between;
-  align-items: center;
-  padding: 1% 5%;
+.navbar{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  position: fixed;
-  z-index: 1;
+  padding: 15px 35px;
 }
 
-.nav-bar-list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.nav-bar-img{
+.nav-img-person{
   width: 150px;
 }
 
-.nav-bar-input{
-  border: none;
-  border-bottom: 1px black solid;
-  padding: 10px;
+.navbar-nav{
+  width: 80%;
+  gap: 5%;
+  padding-left: 30px;
 }
 
-/* Sección de pagina inicio - baner ***********************************************/
+/* ---------------------------------------------------------------------------------------------- */
+.card-content-person{
+  margin: 40px;
+}
 
-.section-baner{
-  display: flex;
-  width: 90%;
+.card-person{
   background-color: rgba(221, 221, 221, 0.788);
-  margin-top: 150px;
-  padding: 0 20px;
-  border-radius: 10px;
-  position: relative; 
+  border: none;
 }
 
-.section-baner-img{
-  width: 50vw;
+.card-text-person{
+  padding: 80px;
+}
+
+.card-img-person{
   position: relative;
-  top: 30px;
+  top: 80px;
+  left: 40px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.781);
-  border-radius: 8px;
-  transition: transform 0.7s ease;
 }
+/* ---------------------------------------------------------------------------------------------- */
 
-.section-baner-contenido{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  padding: 10px 50px;
-  position: relative;
-}
-
-.section-baner h1 {
-  transition: color 0.7s ease; 
-}
-
-
-.section-baner:hover .section-baner-img {
-  transform: scale(1.02);
-  transition: transform 0.7s ease; 
-}
-
-.section-baner:hover .section-baner-contenido h1 {
-  color: #006241; 
-}
-
-/* Sección de pagina principal - contenido  ***********************************************/
-
-.section-card{
-  display:flex;
-  justify-content: center;
+.section-blog-person{
+  padding: 0px 100px;
   flex-wrap: wrap;
-  width: 90%;
-  gap: 10px;
-  margin-top: 80px;
+  gap: 30px;
 }
 
-.section-card-info{
-  width: 350px;
-  background-color: rgba(235, 235, 235, 0.849);
-  padding: 1%;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.7s ease, background-color 0.7s ease
-}
-
-.section-card-info:hover .section-card-img {
-  transform: scale(1.02);
-  transition: transform 0.7s ease; 
-}
-
-.section-card-info:hover .section-card-parrafo {
-  color: #006241; 
-  transition: color 0.7s ease; 
-}
-.section-card-info:hover {
-  transform: scale(1.02);
-  transition: transform 0.7s ease; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.section-card-img{
-  width: 100%;
-  transition: transform 0.7s ease; 
-}
-
-.section-card-parrafo{
-  transition: color 0.7s ease;
-  margin: 20px;
-}
-
-.section-card-content-img{
-  width: 100%;
+.card-img-top{
   height: 160px;
-  /* background-color: aqua; */
-  overflow: hidden;
+}
+.card-body{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Sección pie de pagina ***********************************************/
