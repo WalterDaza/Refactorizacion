@@ -1,0 +1,193 @@
+*, *:after, *:before {     
+  margin: 0;     
+  padding: 0;     
+  box-sizing: border-box;     
+  text-decoration: none; 
+}
+
+body{
+  font-size: 100%;     
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+  width: 100%;    
+}
+/* Sección de navegación ***********************************************/
+.nav-var{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1% 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+}
+
+.nav-bar-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-bar-img{
+  width: 150px;
+}
+
+.nav-bar-input{
+  border: none;
+  border-bottom: 1px black solid;
+  padding: 10px;
+}
+
+/* Sección de pagina inicio - baner ***********************************************/
+
+.section-baner{
+  display: flex;
+  width: 90%;
+  background-color: rgba(221, 221, 221, 0.788);
+  margin-top: 150px;
+  padding: 0 20px;
+  border-radius: 10px;
+  position: relative; 
+}
+
+.section-baner-img{
+  width: 50vw;
+  position: relative;
+  top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.781);
+  border-radius: 8px;
+  transition: transform 0.7s ease;
+}
+
+.section-baner-contenido{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 10px 50px;
+  position: relative;
+}
+
+.section-baner h1 {
+  transition: color 0.7s ease; 
+}
+
+
+.section-baner:hover .section-baner-img {
+  transform: scale(1.02);
+  transition: transform 0.7s ease; 
+}
+
+.section-baner:hover .section-baner-contenido h1 {
+  color: #006241; 
+}
+
+/* Sección de pagina principal - contenido  ***********************************************/
+
+.section-card{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.section-card-info{
+  width: 350px;
+  background-color: rgba(235, 235, 235, 0.849);
+  padding: 1%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.7s ease, background-color 0.7s ease
+}
+
+.section-card-info:hover .section-card-img {
+  transform: scale(1.02);
+  transition: transform 0.7s ease; 
+}
+
+.section-card-info:hover .section-card-parrafo {
+  color: #006241; 
+  transition: color 0.7s ease; 
+}
+.section-card-info:hover {
+  transform: scale(1.02);
+  transition: transform 0.7s ease; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-card-img{
+  width: 100%;
+  transition: transform 0.7s ease; 
+}
+
+.section-card-parrafo{
+  transition: color 0.7s ease;
+  margin: 20px;
+}
+
+.section-card-content-img{
+  width: 100%;
+  height: 160px;
+  /* background-color: aqua; */
+  overflow: hidden;
+}
+
+/* Sección pie de pagina ***********************************************/
+
+.section-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section-footer-img{
+  width: 80px;
+}
+
+.section-footer-content{
+  border-top: 3px rgb(141, 141, 141) solid;
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.section-footer-name{
+  margin: 2%;
+}
+
+.section-footer-email{
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.section-footer-project{
+  font-size: 50px;
+}
